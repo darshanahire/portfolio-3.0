@@ -1,0 +1,391 @@
+/* *{
+    color: #000;
+    margin: 0;
+    padding: 0;
+} */
+
+.App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  
+.fb-bg{
+    margin: 100px auto 120px !important;
+    /* height: 90vh; */
+    /* background-image: conic-gradient( from 
+180deg at 50% 50%, rgba(36, 209, 101, .09) 
+0deg, rgba(226, 214, 54, .09) 
+55.3deg, rgba(254, 108, 91, .09) 
+120deg, rgba(204, 60, 203, .09) 
+165deg, rgba(159, 51, 253, .09) 
+213.75deg, rgba(24, 117, 243, .09) 
+288.12deg, rgba(22, 119, 240, .09) 
+320deg, rgba(36, 209, 101, .09) 
+360deg ); */
+}
+body{
+    color: #000;
+    font-family: 'Ubuntu', sans-serif !important;
+}
+
+html{
+    scroll-behavior: smooth;
+    
+}
+.color{
+    color:white;
+}
+h5{
+    text-align: center;
+}
+h1{
+    color:#071a46;
+    /* text-shadow:5px 4px 8px; */
+   
+}
+h2,h4,h6{
+    color:#071a46;
+    /* text-shadow: 5px 3px 13px */
+   
+}
+#h1{
+    
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#navbar{
+    backdrop-filter: saturate(250%) blur(20px)!important;
+    background-color: rgba(41,40,40,.74)!important;
+}
+.display{
+display: flex;
+justify-self: center;
+align-items: center;
+flex-direction: column;
+}
+.div-container{
+   height: auto;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 100px;
+    z-index: -1;
+}
+#downloadbtn{
+    margin-top: 0px;
+    margin-right: 100px;
+}
+.zeroDiv{
+    display: none;
+}
+.firstDiv{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    margin: auto 50px;
+    padding-left: 0px;
+    /* border: 5px solid white; */
+}
+.secondDiv{
+    /* display: none; */
+    height: auto;
+    /* border: 5px solid white; */
+}
+.proj-img{
+    height: 215px;
+    width: 5px;
+}
+.center{
+    margin: 20px;
+    text-align: center;
+}
+.MoreAbout{
+    width:50vw;
+    /* border: 5px solid red; */
+    margin: 10px auto;
+}
+.moreAbout{
+    height: 500px;
+}
+.btn{
+    margin-top: 10px;
+    align-items: center;
+}
+.readmore{
+    margin-top: 0px;
+}
+.btn-parent{
+    display: flex;
+     justify-content: center; 
+     align-items: center;
+}
+#card-conainer{
+/* border: 5px solid rgb(203, 223, 25); */
+width: 70vw;
+height: auto;
+margin: 10px auto;
+}
+#card-conainer2{
+margin: 10px auto;
+}
+
+.hiddenProjects{
+    background-color: white;
+    /* border: 5px solid red; */
+    height: 50px;
+    /* margin-top: 200px; */
+    z-index: 3;
+    box-shadow: 0px -60px 299px 302px white;
+}
+.card{
+    z-index: -1;
+}
+.show-proj{
+    display: none;
+    /* width: 100vw; */
+    /* border: 5px solid black; */
+}
+.cards{
+    transition: transform .6s;
+    z-index: 4;
+    height: 100%;
+}
+
+#calCard,#noteCard{
+    transition: transform .6s;
+    height: 100%;
+}
+.form-container{
+   margin-top:50px; 
+   margin-bottom: 50px;
+   align-items: center;
+   border: 1px solid rgb(128, 128, 128);
+    border-radius: 10px;
+    background: #02042b;
+    box-shadow: rgb(0 0 0 / 48%) 12px 6px 20px;
+}
+
+.form-label{
+    color: white !important;
+}
+.form-control{
+    color: white !important;
+    background-color: #262542 !important;
+    border: 1px solid #262542 !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+#calCard:hover,#noteCard:hover,.cards:hover{
+    margin: 0 auto;
+
+    transform: scale(1.06);
+}
+
+
+#moreProj{
+    height: 100px;
+    margin-bottom: 10px;
+}
+#contactmeid{
+    margin-top: 30px;
+}
+/* .details{
+margin-top: 200px !important;
+} */
+
+@media screen and (max-width:1000px){
+    .fb-bg{
+        margin: 70px auto 130px !important;
+    }
+    .infopara{
+        text-align: center !important;
+    }
+    .div-container{
+        margin: 0px;
+        flex-direction: column;
+    }
+    #downloadbtn{
+        margin: auto;
+    }
+    .Div{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 300px;
+        width: 350px;}
+    .firstDiv{
+        text-align: center;
+        padding-left: 10px;
+        padding-top: 30px;
+        margin: 0px;
+
+        width: 100%;
+    }
+    .secondDiv{
+        display: none;
+    }
+    .MoreAbout{
+
+        text-align: justify;
+        width: 80vw;
+    }
+    .MoreAbout-div{
+        height: 1200px;
+    }
+    #card-conainer{
+        width: 90vw;
+        margin: 10px auto;
+        height: auto;
+        }
+    #card-conainer2{
+        width: 90vw;
+        margin: 10px auto;
+        height: 1200px;
+        }
+    #covidtracker{
+        z-index: -1;
+    }
+   .center{
+       margin: 10px;
+   }
+   #calCard,#noteCard,.cards{
+       /* display: none; */
+   }
+   .hiddenProjects{
+       width: 100vw;
+       height: 50px;
+   }
+.myproject{
+    display: none;
+}
+.btn-light{
+    margin: auto 100px;
+}
+
+.readmore{
+    font-size: 10px;
+}
+#moreProj{
+    margin-top: -50px;
+}
+.form-container{
+    border-radius: none;
+    box-shadow: none;
+    /* background: none; */
+    margin-top:50px; 
+ 
+}
+form{
+    padding: 10px;
+    border-radius: 10px;
+    /* background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%); */
+
+    border: 1px solid ;
+}
+img{
+    width: 400px;
+    height: 400px;
+}
+.para{
+    font-size: 15px !important}
+.details{
+    text-align: center;
+    margin-top: 110px !important;
+    margin-bottom: 20px !important;
+}
+}
+
+
+.small-container{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}
+.para{
+    font-size: 20px;
+    /* letter-spacing: 1px; */
+    line-height: 30px;
+}
+.overflowImg{
+    width: 30px;
+    height: 30px;
+}
+@media screen and (max-width:400px){
+img{
+    width: 300px;
+    height: 300px;
+}
+}
+#instagram:hover{
+    background-image: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;
+
+}
+#whatsapp:hover{
+    background-color: #25D366;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;   
+}
+#github:hover{
+    background-color: #6e6e6e;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;   
+}
+
+#linkedin:hover{
+    background-color: #2867B2;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    -webkit-text-fill-color: transparent;   
+}
+.pointer{
+cursor: pointer;
+}
+.background{
+    height: auto !important;
+}
