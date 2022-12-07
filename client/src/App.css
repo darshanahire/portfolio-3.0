@@ -90,7 +90,8 @@ h2,h4,h6{
 }
 #navbar{
     backdrop-filter: saturate(250%) blur(20px)!important;
-    background-color: rgba(41,40,40,.74)!important;
+    background-color: #24292f!important;
+    
 }
 .display{
 display: flex;

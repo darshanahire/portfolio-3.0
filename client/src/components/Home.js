@@ -85,7 +85,7 @@ function Home() {
             </div>
         </div>
     </nav>
-        {/* {{!-- <canvas className="background" style={{"position: absolute;"></canvas> --}} */}
+    <canvas className="background" style={{"position": "absolute"}}></canvas>
     <div className="container-fluid" >
         <div className="row fb-bg" style={{"position": "relative"}}>
             <div className="col-12 my-md-auto col-md-6 px-5  order-2 order-md-1 details pb-md-3">
@@ -100,7 +100,7 @@ function Home() {
 
 
             </div>
-            <div className="col-12 col-md-6 order-1 order-md-2 d-flex justifyContent-center align-items-center">
+            <div className="col-12 col-md-6 order-1 order-md-2 d-flex" style={{'justifyContent' : "center","alignItems":"center"}}>
                 <img src={ window.location.origin + "/png/2.jpg" } alt="photo" width="500"/>
             </div>
         </div>
@@ -121,7 +121,7 @@ function Home() {
         </div>
         <div className="small-container col-12 col-md-6 my-5 my-md-0">
             <h2>Skill IN</h2>
-            <div className="row w-100 justifyContent-center my-2">
+            <div className="row w-100 my-2" style={{'justifyContent':"center"}}>
                 <div className="col-3 d-flex justifyContent-center align-items-center flex-column"><i
                         className="fab fa-html5 fa-2x" style={{"color": "#e34c26"}}></i>HTML5 </div>
                 <div className="col-3 d-flex justifyContent-center align-items-center flex-column"><i
@@ -129,7 +129,7 @@ function Home() {
                 <div className="col-3 d-flex justifyContent-center align-items-center flex-column"><i
                         className="fab fa-git-alt fa-2x" style={{"color":"orange"}}></i>Git </div>
             </div>
-            <div className="row w-100 justifyContent-center my-2">
+            <div className="row w-100 my-2" style={{'justifyContent':"center"}}>
                 <div className="col-3 d-flex justifyContent-center align-items-center flex-column"> <i
                         className="fab fa-bootstrap fa-2x" style={{"color":  "#563d7c"}}></i>
                     BootStrap </div>
@@ -140,7 +140,7 @@ function Home() {
                         className="fab fa-github fa-2x"></i>
                     Github </div>
             </div>
-            <div className="row w-100 justifyContent-center my-2">
+            <div className="row w-100 my-2" style={{'justifyContent':"center"}}>
                 <div className="col-3 d-flex justifyContent-center align-items-center flex-column"> <i
                         className="fab fa-node-js fa-2x" style={{"color": "#68a063"}}></i>
                     Node.js </div>
@@ -150,7 +150,8 @@ function Home() {
                 <div className="col-3 d-flex justifyContent-center align-items-center flex-column">
                     <img className="overflowImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png"  alt="" width="30"/>
                     Python </div>
-            <div className="row w-100 justifyContent-center my-2">
+            </div>
+            <div className="row w-100 my-2" style={{'justifyContent':"center"}}>
                 <div className="col-3 d-flex justifyContent-center align-items-center flex-column"><i
                         className="fab fa-html5 fa-2x" style={{"color": "#e34c26"}}></i>HTML5 </div>
                 <div className="col-3 d-flex justifyContent-center align-items-center flex-column"><i
@@ -160,8 +161,6 @@ function Home() {
                     <img className="overflowImg mb-1" src="https://www.freeiconspng.com/uploads/c--logo-icon-0.png" alt="" width="35"/>
                     C++ </div>
             </div>
-            </div>
-
         </div>
         <div className="small-container col-12 col-md-6">
             <img src={ window.location.origin + "/png/8.png" } alt="photo" width="450px"/>
@@ -348,11 +347,11 @@ function Home() {
                                 node.js,Express.ja,hbs
                                 and MongoDB Atlas as a Database.where you contact me, Download my Resume.</p>
                             <div className="btn-parent" style={{"height": "50px"}}>
-                                <a href="https://darshanahire.herokuapp.com/"
+                                <a href="https://darshanahire.onrender.com/"
                                     target="__blank" className="btn btn-outline-dark" type="button">View
                                     Project</a>
                             </div>
-                            <a href="https://github.com/darshanahire/portfolio-2.0" target="__blank"
+                            <a href="https://github.com/darshanahire/portfolio-3.0" target="__blank"
                                 className="readmore" style={{"float": "right" ,"textDecoration":"none"}}>Read
                                 more...</a>
                         </div>
