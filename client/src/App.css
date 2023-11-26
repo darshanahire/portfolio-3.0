@@ -70,18 +70,22 @@ html{
 .color{
     color:white;
 }
-h5{
+.card-title{
     text-align: center;
+    color: black;
 }
 h1{
     color:#071a46;
     /* text-shadow:5px 4px 8px; */
    
 }
-h2,h4,h6{
+h2,h4,h5,h6{
     color:#071a46;
     /* text-shadow: 5px 3px 13px */
    
+}
+.color-blue{
+    color:#071a46;
 }
 #h1{
     
@@ -90,8 +94,9 @@ h2,h4,h6{
 }
 #navbar{
     backdrop-filter: saturate(250%) blur(20px)!important;
-    background-color: #24292f!important;
-    
+    /* background-color: #24292f!important; */
+    background-color: #212529!important;
+    min-height: 60px;
 }
 .display{
 display: flex;
@@ -220,7 +225,7 @@ margin: 10px auto;
 
 
 #moreProj{
-    height: 100px;
+    height: 120px;
     margin-bottom: 10px;
 }
 #contactmeid{
@@ -291,6 +296,13 @@ margin-top: 200px !important;
        width: 100vw;
        height: 50px;
    }
+   .coding-img{
+    width: 150px;
+    height: auto;
+   }
+   .cf-img,.gfg-img{
+    width: 180px;
+   }
 .myproject{
     display: none;
 }
@@ -327,7 +339,7 @@ img{
     font-size: 15px !important}
 .details{
     text-align: center;
-    margin-top: 110px !important;
+    margin-top: 0px !important;
     margin-bottom: 20px !important;
 }
 }
@@ -389,4 +401,24 @@ cursor: pointer;
 }
 .background{
     height: auto !important;
+}
+
+
+@keyframes toAndFro {
+    0%, 100% {
+        transform: translateY(-3px);
+    }
+    50% {
+        transform: translateY(3px); /* Adjust the distance of movement */
+    }
+}
+
+.zoom-text {
+    text-shadow: 0px 0px 15px #071a46;
+    display: inline-block;
+    animation: toAndFro 2s infinite;
+}
+
+.bg-blue{
+    background-color: rgb(153, 227, 252);
 }
