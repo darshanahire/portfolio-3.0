@@ -45,16 +45,16 @@ function Home() {
 
                             <h4 className="mx-md-5 mt-5">Hey, I am</h4>
                             <h2 className="h2 mx-md-5">Darshan Raghunath Ahire.</h2>
-                            <h5 className="mx-md-5">Systems Engineer at Tata Consultancy Services 
+                            <h5 className="mx-md-5">System Engineer at Tata Consultancy Services 
                             </h5>
                             <h5 className="mx-md-5 mt-4 mb-3 zoom-text">My Coding Profiles : 
                             </h5>
-                            <h6 className="mx-md-5 d-flex d-md-block justify-content-between"> 
-                            <a href='https://leetcode.com/darshanahire' target=' '><img className="coding-img mr-5 my-md-1 my-3" src={window.location.origin + "/img/leetcode.png"} alt="" width="120"/></a>
-                            <a href='https://auth.geeksforgeeks.org/user/darshanahire101' target=' '><img className="coding-img mx-5 my-md-1 my-3 gfg-img" src={window.location.origin + "/img/gfg.png"} alt="" width="150"/></a></h6>
-                            <h6 className="mx-md-5 d-flex d-md-block justify-content-between"> 
-                            <a href='https://codechef.com/users/darshanahire' target=' '><img className="coding-img mr-5 my-md-1 mb-3" src={window.location.origin + "/img/cc.png"} alt="" width="120"/></a>
-                            <a href='https://codeforces.com/profile/darshanahire101' target=' '><img className="coding-img mx-5 mt-md-1 mt-3 cf-img" src={window.location.origin + "/img/cf.png"} alt="" width="150"/></a></h6>
+                            <h6 className="row coding-profile-row"> 
+                            <a className='col-12 col-lg-5' href='https://leetcode.com/darshanahire' target=' '><img className="coding-img mx-auto my-md-1 my-2" src={window.location.origin + "/img/leetcode.png"} alt="" width="120"/></a>
+                            <a className='col-12 col-lg-6' href='https://auth.geeksforgeeks.org/user/darshanahire101' target=' '><img className="coding-img mx-auto my-md-1 my-2 gfg-img" src={window.location.origin + "/img/gfg.png"} alt="" width="150"/></a>
+                            <a className='col-12 col-lg-5' href='https://codechef.com/users/darshanahire' target=' '><img className="coding-img mx-auto my-md-1 mb-3" src={window.location.origin + "/img/cc.png"} alt="" width="120"/></a>
+                            <a className='col-12 col-lg-6' href='https://codeforces.com/profile/darshanahire101' target=' '><img className="coding-img mx-auto mb-5 mb-md-2 mt-2 mt-md-4 cf-img" src={window.location.origin + "/img/cf.png"} alt="" width="150"/></a>
+                            </h6>
 
                             <div className="mx-md-5 mt-3">
                                 <a type="button" className="btn btn-dark get-touch-btn" href="#contactmeid">Get in Touch</a>
@@ -64,7 +64,7 @@ function Home() {
 
                         </div>
                         <div className="col-12 col-md-6 order-1 order-md-2 d-flex mx-auto " style={{ 'justifyContent': "center", "alignItems": "center" }}>
-                            <img className="bg-blue rounded-circle" src={window.location.origin + "/img/darshan.png"} alt="photo" width="375" />
+                            <img className="bg-blue rounded-circle myphoto" src={window.location.origin + "/img/darshan.png"} alt="photo" width="375" />
                         </div>
                     </div>
                 </div>
@@ -172,7 +172,7 @@ function Home() {
                             </div>
 
                             <div className="col-12 col-md-6 my-2 ">
-                                <div className="card" id="noteCard">
+                                <div className="card" id="noteCard" style={{"zIndex": show ? "100" : "-1"}}>
                                     <img src={window.location.origin + "/img/blockchain.png"} className="card-img-top proj-img w-100" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">BlockChian based Certification System</h5>
@@ -189,7 +189,7 @@ function Home() {
                                 </div>
                             </div>
                             <div className="col-12 col-md-6 my-2 ">
-                                <div className="card" id="calCard">
+                                <div className="card" id="calCard" style={{"zIndex":show ? "100" : "-1"}}>
                                     <img src={window.location.origin + "/img/mrc.png"} className="card-img-top proj-img w-100" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">Movie Recommendation System</h5>
@@ -208,7 +208,7 @@ function Home() {
                             </div>
                             { show ? <>
                                 <div className="col-12 col-md-6 my-2">
-                                <div className="card">
+                                <div className="card cards">
                                     <img src={window.location.origin + "/img/auto.png"} className="card-img-top proj-img w-100" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">Automatic Email Sender</h5>
@@ -226,7 +226,7 @@ function Home() {
                                 </div>
                             </div>
                             <div className="col-12 col-md-6 my-2">
-                                <div className="card" >
+                                <div className="card cards" >
                                     <img src={window.location.origin + "/img/weatherapp.png"} className="card-img-top proj-img w-100" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">Weather App</h5>
@@ -387,7 +387,7 @@ function Home() {
                             </div>
 
                             <div className="col-12 col-md-11 text-center">
-                                <button className="btn btn-light w-75 my-5 my-md-0 mt-md-5 mx-auto" >Submit</button>
+                                <button className="btn btn-light w-75 my-5 my-md-0 mt-md-5 mx-auto"  type='button'>Submit</button>
 
                             </div>
                         </form>

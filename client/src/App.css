@@ -219,7 +219,7 @@ margin: 10px auto;
 }
 #calCard:hover,#noteCard:hover,.cards:hover{
     margin: 0 auto;
-
+    z-index: 4;
     transform: scale(1.06);
 }
 
@@ -235,6 +235,11 @@ margin: 10px auto;
 margin-top: 200px !important;
 } */
 
+@media screen and (min-width:1000px){
+    .coding-profile-row{
+        margin-left: 38px;
+    }
+}
 @media screen and (max-width:1000px){
     .fb-bg{
         margin: 70px auto 130px !important;
@@ -362,6 +367,12 @@ flex-direction: column;
 }
 @media screen and (max-width:400px){
 img{
+    width: 300px;
+    height: 300px;
+}
+}
+@media screen and (max-width:930px){
+.myphoto{
     width: 300px;
     height: 300px;
 }
