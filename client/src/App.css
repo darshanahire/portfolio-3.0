@@ -7,17 +7,7 @@
 .App {
     text-align: center;
   }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
+
   
   .App-header {
     background-color: #282c34;
@@ -34,29 +24,9 @@
     color: #61dafb;
   }
   
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
 
-  
 .fb-bg{
     margin: 100px auto 120px !important;
-    /* height: 90vh; */
-    /* background-image: conic-gradient( from 
-180deg at 50% 50%, rgba(36, 209, 101, .09) 
-0deg, rgba(226, 214, 54, .09) 
-55.3deg, rgba(254, 108, 91, .09) 
-120deg, rgba(204, 60, 203, .09) 
-165deg, rgba(159, 51, 253, .09) 
-213.75deg, rgba(24, 117, 243, .09) 
-288.12deg, rgba(22, 119, 240, .09) 
-320deg, rgba(36, 209, 101, .09) 
-360deg ); */
 }
 body{
     color: #000;
@@ -75,14 +45,10 @@ html{
     color: black;
 }
 h1{
-    color:#071a46;
-    /* text-shadow:5px 4px 8px; */
-   
+    color:#071a46;   
 }
 h2,h4,h5,h6{
-    color:#071a46;
-    /* text-shadow: 5px 3px 13px */
-   
+    color:#071a46;   
 }
 .color-blue{
     color:#071a46;
@@ -94,7 +60,6 @@ h2,h4,h5,h6{
 }
 #navbar{
     backdrop-filter: saturate(250%) blur(20px)!important;
-    /* background-color: #24292f!important; */
     background-color: #212529!important;
     min-height: 60px;
 }
@@ -126,12 +91,9 @@ flex-direction: column;
     height: auto;
     margin: auto 50px;
     padding-left: 0px;
-    /* border: 5px solid white; */
 }
 .secondDiv{
-    /* display: none; */
     height: auto;
-    /* border: 5px solid white; */
 }
 .proj-img{
     height: 215px;
@@ -143,7 +105,6 @@ flex-direction: column;
 }
 .MoreAbout{
     width:50vw;
-    /* border: 5px solid red; */
     margin: 10px auto;
 }
 .moreAbout{
@@ -173,9 +134,7 @@ margin: 10px auto;
 
 .hiddenProjects{
     background-color: white;
-    /* border: 5px solid red; */
     height: 50px;
-    /* margin-top: 200px; */
     z-index: 3;
     box-shadow: 0px -60px 299px 302px white;
 }
@@ -184,8 +143,6 @@ margin: 10px auto;
 }
 .show-proj{
     display: none;
-    /* width: 100vw; */
-    /* border: 5px solid black; */
 }
 .cards{
     transition: transform .6s;
@@ -231,13 +188,12 @@ margin: 10px auto;
 #contactmeid{
     margin-top: 30px;
 }
-/* .details{
-margin-top: 200px !important;
-} */
+
 
 @media screen and (min-width:1000px){
     .coding-profile-row{
         margin-left: 38px;
+        width: 375px;
     }
 }
 @media screen and (max-width:1000px){
@@ -306,7 +262,7 @@ margin-top: 200px !important;
     height: auto;
    }
    .cf-img,.gfg-img{
-    width: 180px;
+    width: 160px;
    }
 .myproject{
     display: none;
@@ -341,7 +297,8 @@ img{
     height: 400px;
 }
 .para{
-    font-size: 15px !important}
+    font-size: 15px !important;
+}
 .details{
     text-align: center;
     margin-top: 0px !important;
@@ -360,16 +317,45 @@ flex-direction: column;
     font-size: 20px;
     /* letter-spacing: 1px; */
     line-height: 30px;
+    font-weight:300;
 }
 .overflowImg{
     width: 30px;
     height: 30px;
+}
+.overflowImg2{
+    width: 33px;
+    height: 33px;
 }
 @media screen and (max-width:400px){
 img{
     width: 300px;
     height: 300px;
 }
+.coding-img{
+    width: 25vw;
+    height: auto;
+   }
+   .cf-img,.gfg-img{
+    width: 30vw;
+   }
+}
+@media screen and (min-width:800px){
+    .carousel-img{
+        width: 50vw !important;
+        height : auto !important;
+    }
+    .achive-par{
+        height: 600px !important;
+    }
+    .lable{
+        font-size: 20px !important;
+    }
+
+    .slide{
+        width: 60% !important;
+        margin: auto;
+    }
 }
 @media screen and (max-width:930px){
 .myphoto{
@@ -415,21 +401,26 @@ cursor: pointer;
 }
 
 
-@keyframes toAndFro {
-    0%, 100% {
-        transform: translateY(-3px);
-    }
-    50% {
-        transform: translateY(3px); /* Adjust the distance of movement */
-    }
-}
-
-.zoom-text {
-    text-shadow: 0px 0px 15px #071a46;
-    display: inline-block;
-    animation: toAndFro 2s infinite;
-}
-
 .bg-blue{
     background-color: rgb(153, 227, 252);
+}
+
+.achive-par{
+    height: 350px;
+}
+
+.carousel-img{
+    width: 90vw;
+    height: 200px;
+    border-radius: 10px;
+    background-color: lightblue;
+}
+
+.lable{
+    font-size: 14px;
+}
+
+.carousel-inner{
+    background-color: linen;
+    border-radius: 10px
 }

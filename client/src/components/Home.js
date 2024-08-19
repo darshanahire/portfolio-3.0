@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
+import CodingAchive from './CodingAchive'
 function Home() {
     const [show, setShow] = useState(false)
 
@@ -16,15 +17,19 @@ function Home() {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav mx-auto mb-2 mb-lg-0">
-                                <li className="nav-item mx-lg-3">
+                                {/* <li className="nav-item mx-lg-3">
                                     <a className="nav-link active" aria-current="page" href="#">Home</a>
-                                </li>
+                                </li> */}
                                 <li className="nav-item mx-lg-3">
                                     <a className="nav-link active" aria-current="page" href="#moreaboutmeid">About Me</a>
                                 </li>
                                 <li className="nav-item mx-lg-3">
                                     <a className="nav-link active" aria-current="page" href="#myprojectid">My
                                         Projects</a>
+                                </li>
+                                <li className="nav-item mx-lg-3">
+                                    <a className="nav-link active" aria-current="page" href="#achievement">Coding
+                                        Achievement</a>
                                 </li>
                                 <li className="nav-item mx-lg-3">
                                     <a className="nav-link active" aria-current="page" href="#contactmeid">Contact Me</a>
@@ -43,22 +48,22 @@ function Home() {
                     <div className="row fb-bg" style={{ "position": "relative" }}>
                         <div className="col-12 my-md-auto col-md-6 px-5  order-2 order-md-1 details pb-md-3">
 
-                            <h4 className="mx-md-5 mt-5">Hey, I am</h4>
+                            <h4 className="mx-md-5 mt-5">Hello, I am</h4>
                             <h2 className="h2 mx-md-5">Darshan Raghunath Ahire.</h2>
-                            <h5 className="mx-md-5">System Engineer at Tata Consultancy Services 
+                            <h5 className="mx-md-5">System Engineer at Tata Consultancy Services
                             </h5>
-                            <h5 className="mx-md-5 mt-4 mb-3 zoom-text">My Coding Profiles : 
+                            <h5 className="mx-md-5 mt-4 mb-3 zoom-text">My Coding Profiles :
                             </h5>
-                            <h6 className="row coding-profile-row"> 
-                            <a className='col-12 col-lg-5' href='https://leetcode.com/darshanahire' target=' '><img className="coding-img mx-auto my-md-1 my-2" src={window.location.origin + "/img/leetcode.png"} alt="" width="120"/></a>
-                            <a className='col-12 col-lg-6' href='https://auth.geeksforgeeks.org/user/darshanahire101' target=' '><img className="coding-img mx-auto my-md-1 my-2 gfg-img" src={window.location.origin + "/img/gfg.png"} alt="" width="150"/></a>
-                            <a className='col-12 col-lg-5' href='https://codechef.com/users/darshanahire' target=' '><img className="coding-img mx-auto my-md-1 mb-3" src={window.location.origin + "/img/cc.png"} alt="" width="120"/></a>
-                            <a className='col-12 col-lg-6' href='https://codeforces.com/profile/darshanahire101' target=' '><img className="coding-img mx-auto mb-5 mb-md-2 mt-2 mt-md-4 cf-img" src={window.location.origin + "/img/cf.png"} alt="" width="150"/></a>
+                            <h6 className="row coding-profile-row">
+                                <a className='col-5' href='https://leetcode.com/darshanahire' target=' '><img className="coding-img mx-auto my-md-1 my-2" src={window.location.origin + "/img/leetcode.png"} alt="" width="120" /></a>
+                                <a className='col-6' href='https://auth.geeksforgeeks.org/user/darshanahire101' target=' '><img className="coding-img mx-auto my-md-1 my-2 gfg-img" src={window.location.origin + "/img/gfg.png"} alt="" width="150" /></a>
+                                <a className='col-5 mt-1' href='https://codechef.com/users/darshanahire' target=' '><img className="coding-img mx-auto my-md-1 mb-3 mt-2 mt-md-0" src={window.location.origin + "/img/cc.png"} alt="" width="120" /></a>
+                                <a className='col-6 mt-1 mt-md-0' href='https://codeforces.com/profile/darshanahire101' target=' '><img className="coding-img mx-auto mb-5 mb-md-2 mt-4 cf-img" src={window.location.origin + "/img/cf.png"} alt="" width="150" /></a>
                             </h6>
 
                             <div className="mx-md-5 mt-3">
                                 <a type="button" className="btn btn-dark get-touch-btn" href="#contactmeid">Get in Touch</a>
-                                <a  className="btn btn-dark get-touch-btn mx-3" href="pdf/DarshanAhire.pdf" target=' '>Download Resume</a>
+                                <a className="btn btn-dark get-touch-btn mx-3" href="pdf/DarshanAhire.pdf" target=' '>Download Resume</a>
                             </div>
 
 
@@ -69,16 +74,13 @@ function Home() {
                     </div>
                 </div>
                 <div className="row py-2 mx-0" id="moreaboutmeid">
-                    <h1 className="text-center ">More About Me</h1>
+                    <h2 className="text-center ">More About Me</h2>
                     <div className="small-container col-12 col-md-6">
                         <img src={window.location.origin + "/png/5.png"} alt="photo" width="450px" />
                     </div>
                     <div className="small-container col-12 col-md-6">
-                        <p className="para infopara p-4 p-md-0">I am a Full Stack Developer with more than Three year of development experience and
-                            having Good Knowledge in developing applications using different Frontend and Backend Technologies also
-                            Skilled in C++, JavaScript and Java. Strong Engineering profession with Bachelor of
-                            Engineering Focus in Computer Science From Government College of Engineering And
-                            Research Awsari.
+                        <p className="para infopara p-4 p-md-0">I am <b>Full stack developer</b> with <b>3+ years </b> of Personal and 1+ Year of Professional experience and having good knowledge in developing applications using different frontend and backend Technologies like JavaScript, React.Js, Vue.Js, Node.Js, C++ also solved more than <b> 1500+ Data Structure and Algorithmic problems </b> on various platforms like LeetCode, GFG, Codeforces, etc.
+                            I am eager to learn new things and excited to use my knowledge in real world.
                         </p>
                         <a type="button" className="btn btn-outline-dark" href="#contactmeid">Contact Me</a>
                     </div>
@@ -111,12 +113,13 @@ function Home() {
                                 className="fab fa-react fa-2x" style={{ "color": "#7cc5d9" }}></i>
                                 React.js </div>
                             <div className="col-3 d-flex justifyContent-center align-items-center flex-column">
-                                <img className="overflowImg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="" width="30" />
+                                <img className="overflowImg2" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1200px-Python-logo-notext.svg.png" alt="" width="30" />
                                 Python </div>
                         </div>
                         <div className="row w-100 my-2" style={{ 'justifyContent': "center" }}>
-                            <div className="col-3 d-flex justifyContent-center align-items-center flex-column"><i
-                                className="fab fa-html5 fa-2x" style={{ "color": "#e34c26" }}></i>HTML5 </div>
+                            <div className="col-3 d-flex justifyContent-center align-items-center flex-column">
+                                <img className="overflowImg2" src="/img/plsql.png" alt="" width="35" />
+                                PL/Sql </div>
                             <div className="col-3 d-flex justifyContent-center align-items-center flex-column"><i
                                 className="fab fa-vuejs fa-2x" style={{ "color": "#42b883" }}></i>
                                 Vue.js </div>
@@ -132,7 +135,7 @@ function Home() {
                 </div>
             </div>
             <div id="myprojectid">
-                <h1 className="center" id="h1">My Projects</h1>
+                <h2 className="center" id="h1">My Projects</h2>
                 <div id="card-conainer" className="MoreAbout-div mt-5">
                     <div >
                         <div className="row">
@@ -165,14 +168,14 @@ function Home() {
 
                                         <a href="https://github.com/darshanahire/Whatapp-clone" target="__blank"
                                             className="readmore" style={{ "float": "right", "textDecoration": "none" }}> Read more...
-                                            </a>                                   
+                                        </a>
 
                                     </div>
                                 </div>
                             </div>
 
                             <div className="col-12 col-md-6 my-2 ">
-                                <div className="card" id="noteCard" style={{"zIndex": show ? "100" : "-1"}}>
+                                <div className="card" id="noteCard" style={{ "zIndex": show ? "100" : "-1" }}>
                                     <img src={window.location.origin + "/img/blockchain.png"} className="card-img-top proj-img w-100" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">BlockChian based Certification System</h5>
@@ -189,7 +192,7 @@ function Home() {
                                 </div>
                             </div>
                             <div className="col-12 col-md-6 my-2 ">
-                                <div className="card" id="calCard" style={{"zIndex":show ? "100" : "-1"}}>
+                                <div className="card" id="calCard" style={{ "zIndex": show ? "100" : "-1" }}>
                                     <img src={window.location.origin + "/img/mrc.png"} className="card-img-top proj-img w-100" alt="..." />
                                     <div className="card-body">
                                         <h5 className="card-title">Movie Recommendation System</h5>
@@ -206,157 +209,158 @@ function Home() {
                                     </div>
                                 </div>
                             </div>
-                            { show ? <>
+                            {show ? <>
                                 <div className="col-12 col-md-6 my-2">
-                                <div className="card cards">
-                                    <img src={window.location.origin + "/img/auto.png"} className="card-img-top proj-img w-100" alt="..." />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Automatic Email Sender</h5>
-                                        <p className="card-text">It is an Automatic Email sender Website Also created with MERN
-                                            stack. By which we can send mail easily.
-                                        </p>
-                                        <div className="btn-parent" style={{ "height": "50px" }}>
+                                    <div className="card cards">
+                                        <img src={window.location.origin + "/img/auto.png"} className="card-img-top proj-img w-100" alt="..." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Automatic Email Sender</h5>
+                                            <p className="card-text">It is an Automatic Email sender Website Also created with MERN
+                                                stack. By which we can send mail easily.
+                                            </p>
+                                            <div className="btn-parent" style={{ "height": "50px" }}>
+                                                <a href="https://github.com/darshanahire/automatic-email-sender" target="__blank"
+                                                    className="btn btn-outline-dark" type="button">View
+                                                    Project</a>
+                                            </div>
                                             <a href="https://github.com/darshanahire/automatic-email-sender" target="__blank"
-                                                className="btn btn-outline-dark" type="button">View
-                                                Project</a>
+                                                className="readmore" style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
                                         </div>
-                                        <a href="https://github.com/darshanahire/automatic-email-sender" target="__blank"
-                                            className="readmore" style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-12 col-md-6 my-2">
-                                <div className="card cards" >
-                                    <img src={window.location.origin + "/img/weatherapp.png"} className="card-img-top proj-img w-100" alt="..." />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Weather App</h5>
-                                        <p className="card-text">This website will gives Temperature of searching City along with
-                                            that it will also gives Atmospheric Pressure ,Humidity and Much More.</p>
-                                        <div className="btn-parent" style={{ "height": "50px" }}>
-                                            <a href="https://github.com/darshanahire/weather_app" target="__blank"
-                                                className="btn btn-outline-dark" type="button">View Project</a>
+                                <div className="col-12 col-md-6 my-2">
+                                    <div className="card cards" >
+                                        <img src={window.location.origin + "/img/weatherapp.png"} className="card-img-top proj-img w-100" alt="..." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Weather App</h5>
+                                            <p className="card-text">This website will gives Temperature of searching City along with
+                                                that it will also gives Atmospheric Pressure ,Humidity and Much More.</p>
+                                            <div className="btn-parent" style={{ "height": "50px" }}>
+                                                <a href="https://github.com/darshanahire/weather_app" target="__blank"
+                                                    className="btn btn-outline-dark" type="button">View Project</a>
+                                            </div>
+                                            <a href="https://github.com/darshanahire/weather_app" target="__blank" className="readmore"
+                                                style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
                                         </div>
-                                        <a href="https://github.com/darshanahire/weather_app" target="__blank" className="readmore"
-                                            style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-12 col-md-6 my-2 ">
-                                <div className="card cards">
-                                    <img src={window.location.origin + "/img/covidtracker.png"} className="card-img-top proj-img w-100" alt="..." />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Covid Tracker</h5>
-                                        <p className="card-text">Covid Tracker Website which gives Current Corona Virus updates
-                                            from
-                                            all over the World with single click.
-                                        </p>
-                                        <div className="btn-parent" style={{ "height": "50px" }}>
-                                            <a href="https://darshanahire.github.io/Covid_Tracker_by_Fetch_Api/"
-                                                target="__blank" className="btn btn-outline-dark" type="button">View
-                                                Project</a>
+                                <div className="col-12 col-md-6 my-2 ">
+                                    <div className="card cards">
+                                        <img src={window.location.origin + "/img/covidtracker.png"} className="card-img-top proj-img w-100" alt="..." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Covid Tracker</h5>
+                                            <p className="card-text">Covid Tracker Website which gives Current Corona Virus updates
+                                                from
+                                                all over the World with single click.
+                                            </p>
+                                            <div className="btn-parent" style={{ "height": "50px" }}>
+                                                <a href="https://darshanahire.github.io/Covid_Tracker_by_Fetch_Api/"
+                                                    target="__blank" className="btn btn-outline-dark" type="button">View
+                                                    Project</a>
+                                            </div>
+                                            <a href="https://github.com/darshanahire/Covid_Tracker_by_Fetch_Api" target="__blank"
+                                                className="readmore" style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
                                         </div>
-                                        <a href="https://github.com/darshanahire/Covid_Tracker_by_Fetch_Api" target="__blank"
-                                            className="readmore" style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="col-12 col-md-6 my-2">
-                                <div className="card cards">
-                                    <img src={window.location.origin + "/img/calculater.png"} className="card-img-top proj-img w-100" alt="..." />
-                                    <div className="card-body">
-                                        <h5 className="card-title">calculator</h5>
-                                        <p className="card-text">Calculator Website where we can perhtmlForm all mathematical
-                                            operations.It supports to Dark mode also along with the Light Mode.</p>
-                                        <div className="btn-parent" style={{ "height": "50px" }}>
-                                            <a href="https://darshanahire.github.io/Calculator_in_Pure_VanillaJS/"
-                                                target="__blank" className="btn btn-outline-dark" type="button">View
-                                                Project</a>
+                                <div className="col-12 col-md-6 my-2">
+                                    <div className="card cards">
+                                        <img src={window.location.origin + "/img/calculater.png"} className="card-img-top proj-img w-100" alt="..." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">calculator</h5>
+                                            <p className="card-text">Calculator Website where we can perhtmlForm all mathematical
+                                                operations.It supports to Dark mode also along with the Light Mode.</p>
+                                            <div className="btn-parent" style={{ "height": "50px" }}>
+                                                <a href="https://darshanahire.github.io/Calculator_in_Pure_VanillaJS/"
+                                                    target="__blank" className="btn btn-outline-dark" type="button">View
+                                                    Project</a>
+                                            </div>
+                                            <a href="https://github.com/darshanahire/Calculator_in_Pure_VanillaJS" target="__blank"
+                                                className="readmore" style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
                                         </div>
-                                        <a href="https://github.com/darshanahire/Calculator_in_Pure_VanillaJS" target="__blank"
-                                            className="readmore" style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
+                                    </div>
+                                </div >
+                                <div className="col-12 col-md-6 my-2">
+                                    <div className="card cards">
+                                        <img src={window.location.origin + "/img/noteapp.png"} className="card-img-top proj-img w-100" alt="..." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Note Taking App</h5>
+                                            <p className="card-text">Basic Note Taking Website by using Vanilla JS, Css3, Html5 and
+                                                Bootstrap.Where we can Read ,Write and Delete notes which are Store in Your
+                                                Local
+                                                Storage.</p>
+                                            <div className="btn-parent" style={{ "height": "50px" }}>
+                                                <button className="btn btn-outline-dark" type="button">View Project</button>
+                                            </div>
+                                            <a href="" target="__blank" className="readmore"
+                                                style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
+                                        </div>
+                                    </div>
+                                </div >
+                                <div className="col-12 col-md-6 my-2">
+                                    <div className="card cards">
+                                        <img src={window.location.origin + "/img/mypostman.png"} className="card-img-top proj-img w-100" alt="..." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">mypostman Api</h5>
+                                            <p className="card-text">This is a website where we can perhtmlForm Get and Post request on
+                                                sample data and get Json data. </p>
+                                            <div className="btn-parent" style={{ "height": "50px" }}>
+                                                <button className="btn btn-outline-dark" type="button">View Project</button>
+                                            </div>
+                                            <a href="" target="__blank" className="readmore"
+                                                style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
+                                        </div>
+                                    </div>
+                                </div >
+                                <div className="col-12 col-md-6 my-2">
+                                    <div className="card cards">
+                                        <img src={window.location.origin + "/img/library.png"} className="card-img-top proj-img w-100" alt="..." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">Library Management website</h5>
+                                            <p className="card-text">This is a simple library management system where we can add,
+                                                get,see
+                                                books available on website.</p>
+                                            <div className="btn-parent" style={{ "height": "50px" }}>
+                                                <button className="btn btn-outline-dark" type="button">View Project</button>
+                                            </div>
+                                            <a href="" target="__blank" className="readmore"
+                                                style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
+                                        </div>
+                                    </div>
+                                </div >
+
+                                <div className="col-12 col-md-6 my-2">
+                                    <div className="card cards">
+                                        <img src={window.location.origin + "/img/portfolio.png"} className="card-img-top proj-img w-100" alt="..." />
+                                        <div className="card-body">
+                                            <h5 className="card-title">portfolio</h5>
+                                            <p className="card-text">This is My Personal Website created by using
+                                                node.js,Express.ja,hbs
+                                                and MongoDB Atlas as a Database.where you contact me, Download my Resume.</p>
+                                            <div className="btn-parent" style={{ "height": "50px" }}>
+                                                <a href="https://ahire.vercel.app/"
+                                                    target="__blank" className="btn btn-outline-dark" type="button">View
+                                                    Project</a>
+                                            </div>
+                                            <a href="https://github.com/darshanahire/portfolio-3.0" target="__blank"
+                                                className="readmore" style={{ "float": "right", "textDecoration": "none" }}>Read
+                                                more...</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div >
-                            <div className="col-12 col-md-6 my-2">
-                                <div className="card cards">
-                                    <img src={window.location.origin + "/img/noteapp.png"} className="card-img-top proj-img w-100" alt="..." />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Note Taking App</h5>
-                                        <p className="card-text">Basic Note Taking Website by using Vanilla JS, Css3, Html5 and
-                                            Bootstrap.Where we can Read ,Write and Delete notes which are Store in Your
-                                            Local
-                                            Storage.</p>
-                                        <div className="btn-parent" style={{ "height": "50px" }}>
-                                            <button className="btn btn-outline-dark" type="button">View Project</button>
-                                        </div>
-                                        <a href="" target="__blank" className="readmore"
-                                            style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
-                                    </div>
-                                </div>
-                            </div >
-                            <div className="col-12 col-md-6 my-2">
-                                <div className="card cards">
-                                    <img src={window.location.origin + "/img/mypostman.png"} className="card-img-top proj-img w-100" alt="..." />
-                                    <div className="card-body">
-                                        <h5 className="card-title">mypostman Api</h5>
-                                        <p className="card-text">This is a website where we can perhtmlForm Get and Post request on
-                                            sample data and get Json data. </p>
-                                        <div className="btn-parent" style={{ "height": "50px" }}>
-                                            <button className="btn btn-outline-dark" type="button">View Project</button>
-                                        </div>
-                                        <a href="" target="__blank" className="readmore"
-                                            style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
-                                    </div>
-                                </div>
-                            </div >
-                            <div className="col-12 col-md-6 my-2">
-                                <div className="card cards">
-                                    <img src={window.location.origin + "/img/library.png"} className="card-img-top proj-img w-100" alt="..." />
-                                    <div className="card-body">
-                                        <h5 className="card-title">Library Management website</h5>
-                                        <p className="card-text">This is a simple library management system where we can add,
-                                            get,see
-                                            books available on website.</p>
-                                        <div className="btn-parent" style={{ "height": "50px" }}>
-                                            <button className="btn btn-outline-dark" type="button">View Project</button>
-                                        </div>
-                                        <a href="" target="__blank" className="readmore"
-                                            style={{ "float": "right", "textDecoration": "none" }}>Read more...</a>
-                                    </div>
-                                </div>
-                            </div >
-      
-                            <div className="col-12 col-md-6 my-2">
-                                <div className="card cards">
-                                    <img src={window.location.origin + "/img/portfolio.png"} className="card-img-top proj-img w-100" alt="..." />
-                                    <div className="card-body">
-                                        <h5 className="card-title">portfolio</h5>
-                                        <p className="card-text">This is My Personal Website created by using
-                                            node.js,Express.ja,hbs
-                                            and MongoDB Atlas as a Database.where you contact me, Download my Resume.</p>
-                                        <div className="btn-parent" style={{ "height": "50px" }}>
-                                            <a href="https://ahire.vercel.app/"
-                                                target="__blank" className="btn btn-outline-dark" type="button">View
-                                                Project</a>
-                                        </div>
-                                        <a href="https://github.com/darshanahire/portfolio-3.0" target="__blank"
-                                            className="readmore" style={{ "float": "right", "textDecoration": "none" }}>Read
-                                            more...</a>
-                                    </div>
-                                </div>
-                            </div>
                             </> : <></>}
                         </div >
                     </div >
                 </div >
                 <div className="btn-parent" id="moreProj">
-                    <button type="button" className="btn btn-outline-dark" onClick={()=>{setShow(!show)}}>View {show ? "Less" : "More"} Projects</button>
+                    <button type="button" className="btn btn-outline-dark" onClick={() => { setShow(!show) }}>View {show ? "Less" : "More"} Projects</button>
                 </div>
                 <div className="hiddenProjects" id="hiddenProjects"></div>
             </div >
+            <span id="achievement"><CodingAchive /> </span>
             <div className="container-fluid">
                 <div className="row" id="contactmeid">
-                    <h1 className="center mb-5 mx-0">Get In Touch</h1>
+                    <h2 className="center mb-5 mx-0">Get In Touch</h2>
                     <div className="small-container col-12 col-md-6">
                         <img src={window.location.origin + "/png/13.png"} alt="photo" width="800px" />
                     </div>
@@ -387,7 +391,7 @@ function Home() {
                             </div>
 
                             <div className="col-12 col-md-11 text-center">
-                                <button className="btn btn-light w-75 my-5 my-md-0 mt-md-5 mx-auto"  type='button'>Submit</button>
+                                <button className="btn btn-light w-75 my-5 my-md-0 mt-md-5 mx-auto" type='button'>Submit</button>
 
                             </div>
                         </form>
@@ -401,13 +405,16 @@ function Home() {
                 <a id="github" className="pointer fab fa-github-square fa-2x mx-3"
                     style={{ "color": "black", "textDecoration": "none", "height": "fit-content" }} href="https://github.com/darshanahire"
                     target="__blank"></a>
-                <i id="whatsapp" className="pointer fab fa-whatsapp fa-2x mx-3" style={{ "color": "black", "height": "fit-content" }}></i>
-                <i id="instagram" className="pointer fab fa-instagram fa-2x mx-3" style={{ "color": "black", "height": "fit-content" }}></i>
+                <a id="whatsapp" className="pointer fab fa-whatsapp fa-2x mx-3" style={{ "color": "black", "textDecoration": "none", "height": "fit-content" }}
+                    href="https://wa.me/+919309941438" target="__blank"></a>
+                <a id="instagram" className="pointer fab fa-instagram fa-2x mx-3" style={{ "color": "black", "textDecoration": "none", "height": "fit-content" }}
+                    href="https://www.instagram.com/ahire_darshan_" target="__blank"></a>
             </div>
-            <div class="bg-body-tertiary text-center text-lg-start">
-                <div class="text-center p-3">
+            <div className="bg-body-tertiary text-center text-lg-start">
+                <div className="text-center p-3">
 
-                    <p class="text-body" >&copy; {new Date().getFullYear()} Darshan Ahire - All rights reserved.</p>
+                    {/* <p className="text-body" >&copy; {new Date().getFullYear()} Darshan Ahire - All rights reserved.</p> */}
+                    <p className="text-body" >Build with ❤️ by Darshan - (2020-{new Date().getFullYear()}).</p>
                 </div>
             </div>
         </>
